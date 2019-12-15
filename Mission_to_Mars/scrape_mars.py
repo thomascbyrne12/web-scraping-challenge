@@ -92,10 +92,10 @@ def scrape():
     cerberus = {'title' : soup_cerberus.find('h2', {'class': 'title'}), \
                 'img_url' : soup_cerberus.find('img', {'class': 'wide-image'})}
     schiaparelli = {'title' : soup_schiaparelli.find('h2', {'class': 'title'}), \
-                    'img_url' : soup_schiaparelli.find('img', {'class': 'wide-image'})
+                    'img_url' : soup_schiaparelli.find('img', {'class': 'wide-image'})}
     syrtis_major = {'title' : soup_syrtis_major.find('h2', {'class': 'title'}), \
-                    'img_url' : soup_syrtis_major.find('img', {'class': 'wide-image'})
+                    'img_url' : soup_syrtis_major.find('img', {'class': 'wide-image'})}
     valles_marineris = {'title' : soup_valles_marineris.find('h2', {'class': 'title'}), \
-                        'img_url' : soup_valles_marineris.find('img', {'class': 'wide-image'})
+                        'img_url' : soup_valles_marineris.find('img', {'class': 'wide-image'})}
 
     hemisphere_image_urls = [cerberus, schiaparelli, syrtis_major, valle_marineris]
