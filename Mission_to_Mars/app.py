@@ -37,7 +37,7 @@ def scrape():
     print('Update mongo database', file=sys.stdout)
 
     # Redirects to home screen
-    return redirect('\')
+    return redirect('/')
 
     # Prints to screen
     print("Redirect to index", file=sys.stdout)
