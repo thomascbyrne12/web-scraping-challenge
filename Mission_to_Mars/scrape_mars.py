@@ -7,7 +7,7 @@ from splinter import Browser
 
 def scrape():
     # Webpage to scrape url for NASA
-    url_nasa = "https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at            +desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest"
+    url_nasa = "https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest"
 
     # Creating Beautiful Soup connection and output file to NASA url
     response_nasa = requests.get(url_nasa)
@@ -20,7 +20,6 @@ def scrape():
     # Pulls first article title and removes /n characters
     first_news_title = news_titles[0].text
     first_news_title = first_news_title.replace("\n", "")
-    first_news_title
 
     # Pulls first article description
     # # first_news_paragraph = news_paragraphs[0].text
@@ -44,8 +43,6 @@ def scrape():
 
     feature_image_url = 'https://mars.nasa.gov' + feature_image_url_end
 
-    feature_image_url
-
     # Mars weather twitter scraping
     url_twitter = "https://twitter.com/marswxreport?lang=en"
 
@@ -55,7 +52,7 @@ def scrape():
 
     # Scrapes webpage for the most recent tweet about Mars weather
     mars_weather = soup_twitter.find('p', {'class': 'TweetTextSize TweetTextSize--normal js-tweet-text tweet-text'})
-    mars_weather.text
+    mars_weather = mars_weather.text
 
     # Mars Facts Webpage url
     url_facts = "https://space-facts.com/mars/"
