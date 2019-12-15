@@ -98,4 +98,4 @@ def scrape():
     valles_marineris = {'title' : soup_valles_marineris.find('h2', {'class': 'title'}), \
                         'img_url' : soup_valles_marineris.find('img', {'class': 'wide-image'})}
 
-    hemisphere_image_urls = [cerberus, schiaparelli, syrtis_major, valle_marineris]
+    hemisphere_image_urls = [cerberus, schiaparelli, syrtis_major, valles_marineris]
