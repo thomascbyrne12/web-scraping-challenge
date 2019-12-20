@@ -25,13 +25,13 @@ def index():
 def scrape():
 
     # Runs scrape function
-    scarped_mars = scrape_mars.scrape()
+    scraped_mars = scrape_mars.scrape()
 
     #Prints to screen
     print('Run scrape function', file=sys.stdout)
 
     # Updates database
-    mongo.db.collection.update({}, scraped_mars_data, upsert=True)
+    mongo.db.collection.update({}, scraped_mars, upsert=True)
 
     # Prints to screen
     print('Update mongo database', file=sys.stdout)
